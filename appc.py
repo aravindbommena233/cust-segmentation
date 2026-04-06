@@ -485,7 +485,9 @@ elif page == "📊 Segment Overview":
             y=seg_df[feat_choice],
             name=SEGMENT_CONFIG[seg]["name"],
             marker_color=SEGMENT_CONFIG[seg]["color"],
-            fillcolor=SEGMENT_CONFIG[seg]["color"] + "22",
+            # fillcolor=SEGMENT_CONFIG[seg]["color"] + "22"
+            fillcolor=SEGMENT_CONFIG[seg]["color"]
+
         ))
     fig_box.update_layout(**PLOT_LAYOUT, height=380,
                           yaxis_title=feat_choice,
